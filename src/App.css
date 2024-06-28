@@ -3,18 +3,3 @@
 .App {
   text-align: center;
 }
-
-:root {
-  --border-color: rgb(218 218 218);
-  --date-color: rgb(114 114 114);
-  --price-color: rgb(72 72 72);
-  --vertical-color: rgb(230 0 18);
-  --button-hover:rgb(172 0 13);
-  --card-color: rgb(72 72 72);
-  --background-color:rgba(0, 0, 0, 0.3);
-  --background-hover:rgba(0, 0, 0, 0.6);
-  --background-main:rgb(214, 240, 250);
-  --shadow-color:rgba(60, 64, 89, 0.15);
-  --breadcrumbs-color:rgb(114, 114, 114);
-  --breadcrumbs-arrow:rgb(218, 218, 218);
-}

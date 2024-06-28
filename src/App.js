@@ -1,16 +1,17 @@
 import React from "react";
 import "./App.css";
-import Games from "./components/games";
-import MainBanner from "./components/mainBanner";
-import Highlight from "./components/highlight";
+import { Navigate, BrowserRouter, Route, Routes } from "react-router-dom";
+import GamePage from "./pages/gamePage";
 
 function App() {
   return (
-    <>
-      <MainBanner />
-      <Highlight />
-      <Games />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/games/9" />} />
+        <Route path="/games/" element={<Navigate to="/games/9" />} />
+        <Route path="/games/:id" element={<GamePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
