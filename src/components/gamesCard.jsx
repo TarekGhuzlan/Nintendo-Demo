@@ -8,7 +8,7 @@ const GamesCard = ({ _id, name, price, date, image }) => {
       <Link to={`/games/${_id}`} reloadDocument>
         <div className="duration-300	group-hover:-translate-y-4">
           <img
-            className="rounded-2xl h-auto relative grow  "
+            className="rounded-t-2xl h-auto relative grow  "
             src={image}
             alt=""
           />

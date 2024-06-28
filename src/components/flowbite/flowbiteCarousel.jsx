@@ -22,6 +22,7 @@ export function FlowbiteCarousel({ images, onClick }) {
               src={image.big_image}
               alt="..."
               onClick={() => onClick(index++)}
+              className="rounded-2xl"
             />
           ))}
         </Carousel>
