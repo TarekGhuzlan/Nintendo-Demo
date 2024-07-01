@@ -4,7 +4,7 @@ import Favorite from "./common/favorite";
 
 const GamesCard = ({ _id, name, price, date, image }) => {
   return (
-    <div className="group mx-5 my-6 basis-[16.375rem] h-full bg-white border border-solid  rounded-2xl">
+    <div className="group mx-4 my-6 basis-[16.375rem] h-full bg-white border border-solid  rounded-2xl">
       <Link to={`/games/${_id}`} reloadDocument>
         <div className="duration-300	group-hover:-translate-y-4">
           <img

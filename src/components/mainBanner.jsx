@@ -11,8 +11,8 @@ import { ReactSVG } from "react-svg";
 const MainBanner = ({ game, images, openLightbox }) => {
   return (
     <>
-      <div className="bg-nin_lightblue relative w-full py-8 px-[4.4rem]">
-        <div className="bg-white grid  auto-cols-auto gap-4 -gap-x-2 box-border shadow-lg rounded-2xl  pt-8 pb-16 px-12 -mb-16">
+      <div className=" bg-nin_lightblue relative w-full py-8">
+        <div className="container w-auto max-w-screen-xl mx-auto bg-white grid  auto-cols-auto gap-4 -gap-x-2 box-border shadow-lg rounded-2xl  py-8  px-12 -mb-16">
           <div className="col-span-2  ">
             <FlowbiteBreadcrumbs currentPage={game.name} />
           </div>
@@ -39,6 +39,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
                 <div className="pt-2">Users Interact</div>
               </div>
             </div>
+            <span className="block w-6 h-6"></span>
           </div>
           <div className="grid  auto-rows-min ">
             <div className="flex items-start font-light	text-sm	items-center">

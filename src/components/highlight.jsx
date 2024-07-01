@@ -4,10 +4,10 @@ import ReadMore from "./common/readMore";
 
 const Highlight = ({ game }) => {
   return (
-    <div className="mt-16 py-12">
-      <div className="mx-[118px]">
+    <div className="container mx-auto max-w-6xl mt-16 py-12">
+      <div>
         <div className="grid grid-cols-2 grid-flow-col gap-7 items-start">
-          <div className="leading-[1.4rem]">
+          <div>
             <h2 className="font-bold text-[1.3125rem]">
               You're moving to the valley...
             </h2>

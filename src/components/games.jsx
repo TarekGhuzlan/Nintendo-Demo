@@ -5,8 +5,8 @@ import CardsSlider from "./cardsSlider";
 const Games = ({ games }) => {
   return (
     <>
-      <div className="pt-12 pb-4 relative w-full ">
-        <div className="w-11/12	max-w-6xl mx-auto">
+      <div className="container mx-auto max-w-6xl pt-12 pb-4 relative w-full ">
+        <div className="mx-auto">
           <h2 className="text-[1.75rem] font-bold	leading-snug">
             More like this
           </h2>
