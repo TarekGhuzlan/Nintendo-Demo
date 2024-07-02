@@ -43,6 +43,7 @@ const GamePage = () => {
         className="overflow"
         closeLightbox={() => handleOpenLightbox(-1)}
       />
+
       <MainBanner
         game={game}
         images={images}

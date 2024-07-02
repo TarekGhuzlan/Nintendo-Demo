@@ -33,7 +33,7 @@ const GamesCard = ({ _id, name, price, date, image }) => {
                 <p className="text-sm font-light ">Nintendo Switch</p>
               </div>
               <div className="text-right px-4 pb-4 ">
-                <Favorite className="w-6 -m-3" />
+                <Favorite className="-m-3" />
               </div>
             </div>
           </div>
