@@ -13,7 +13,7 @@ const Favorite = ({ className }) => {
         data-testid="heartspark"
         color="currentColor"
         size="48"
-        className={`${className} fill-red-600 font-black stroke-transparent	hover:stroke-red-600`}
+        className={`${className} fill-red-600 font-black stroke-transparent	hover:stroke-red-600 delay-0 ease-in-out duration-200`}
       >
         <g class="hearts">
           <path

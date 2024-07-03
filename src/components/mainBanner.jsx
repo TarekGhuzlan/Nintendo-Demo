@@ -52,7 +52,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
             <div className="flex flex-row	justify-between">
               <p className="font-bold text-[1.75rem]">${game.price}</p>
               <div>
-                <Favorite />
+                <Favorite className="-ml-3" />
               </div>
             </div>
             <span className="w-6 h-6"></span>
