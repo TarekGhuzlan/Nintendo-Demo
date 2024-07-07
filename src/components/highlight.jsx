@@ -5,7 +5,7 @@ import ReadMore from "./common/readMore";
 const Highlight = ({ game }) => {
   return (
     <section className="w-full mt-8 md:mt-16 py-8 md:py-12 scroll-mt-[120px]">
-      <div className="container mx-4 md:mx-auto w-[96%] max-w-6xl">
+      <div className="container mx-4 md:mx-auto w-[96%] max-w-[71.5rem]">
         <div className="grid md:grid-cols-2 gap-7 items-start">
           <div className="block">
             <h2 className="font-bold text-[1.3125rem]">

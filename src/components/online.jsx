@@ -6,7 +6,7 @@ import { ReactSVG } from "react-svg";
 const Online = () => {
   return (
     <section className="py-8 md:py-12 w-full scroll-mt-[120px]">
-      <div className="md:w-[96%] mx-4 md:mx-auto max-w-[71.5rem]">
+      <div className="container md:w-[96%] mx-4 md:mx-auto max-w-[71.5rem]">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] p-8 md:py-0 bg-nin_cardbg rounded-2xl items-center">
           <div className="flex flex-col gap-6">
             <ReactSVG src={OnlineIcon} />

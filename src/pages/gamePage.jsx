@@ -5,6 +5,7 @@ import Highlight from "./../components/highlight";
 import Details from "../components/details";
 import Online from "../components/online";
 import Games from "../components/games";
+import Rights from "../components/rights";
 import Lightbox from "./../components/lightbox";
 import { getImages } from "./../data/images";
 import { getGames, getGame } from "../data/games";
@@ -54,6 +55,7 @@ const GamePage = () => {
       <Details />
       <Online />
       <Games games={filteredGames} />
+      <Rights />
     </>
   );
 };
