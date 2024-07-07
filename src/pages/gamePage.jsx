@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import MainBanner from "../components/mainBanner";
 import Highlight from "./../components/highlight";
 import Details from "../components/details";
+import Online from "../components/online";
 import Games from "../components/games";
 import Lightbox from "./../components/lightbox";
 import { getImages } from "./../data/images";
@@ -51,6 +52,7 @@ const GamePage = () => {
       />
       <Highlight game={game} />
       <Details />
+      <Online />
       <Games games={filteredGames} />
     </>
   );
