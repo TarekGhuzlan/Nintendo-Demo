@@ -4,18 +4,18 @@ import ReadMore from "./common/readMore";
 
 const Highlight = ({ game }) => {
   return (
-    <div className="container mx-auto max-w-6xl mt-16 py-12">
-      <div>
-        <div className="grid grid-cols-2 grid-flow-col gap-7 items-start">
-          <div>
+    <section className="w-full mt-8 md:mt-16 py-8 md:py-12 scroll-mt-[120px]">
+      <div className="container mx-4 md:mx-auto w-[96%] max-w-6xl">
+        <div className="grid md:grid-cols-2 gap-7 items-start">
+          <div className="block">
             <h2 className="font-bold text-[1.3125rem]">
               You're moving to the valley...
             </h2>
             <div className="flex flex-col items-start mb-4">
-              <div className="  "></div>
+              <div></div>
               <ReadMore
                 text={[
-                  <p className="font-light text-base mt-4 mb-2 ">
+                  <p className="font-light text-base leading-[1.4rem] mt-4 mb-2 ">
                     You’ve inherited your grandfather’s old farm plot in Stardew
                     Valley. Armed with hand-me-down tools and a few coins, you
                     set out to begin your new life. Can you learn to live off
@@ -49,18 +49,16 @@ const Highlight = ({ game }) => {
               />
             </div>
           </div>
-          <div className="items-center">
+          <div className="relative items-center overflow-hidden">
             <img
-              className="rounded-2xl"
+              className="rounded-2xl object-contain w-full"
               src={game.image}
               alt=""
-              width="558"
-              height="314"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

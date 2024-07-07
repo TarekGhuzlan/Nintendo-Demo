@@ -4,44 +4,31 @@ import { FlowbiteCarousel } from "./flowbite/flowbiteCarousel";
 import { FlowbiteBreadcrumbs } from "./flowbite/flowbiteBreadcrumbs";
 import Favorite from "./common/favorite";
 import Button from "./common/button";
+import Rating from "./common/rating";
 import DownloadIcon from "../assets/icons/DownloadIcon.svg";
-import EveryonePlus from "../assets/icons/EveryonePlus.svg";
-import { ReactSVG } from "react-svg";
 
 const MainBanner = ({ game, images, openLightbox }) => {
   return (
     <>
-      <div className=" bg-nin_lightblue relative w-full py-8">
-        <div className="container w-auto max-w-screen-xl mx-auto bg-white grid  auto-cols-auto gap-4 -gap-x-2 box-border shadow-lg rounded-2xl  py-8  px-12 -mb-16">
-          <div className="col-span-2  ">
+      <section className="block  bg-nin_lightblue relative w-full max-xl:pb-16 xl:py-8">
+        <div className="container w-auto max-w-screen-xl mx-auto bg-white grid  md:auto-cols-auto md:gap-x-8 gap-y-4  shadow-lg xl:rounded-2xl pt-4 max-md:pb-12 md:py-8 md:px-12 -mb-16 ">
+          <div className="md:col-span-2">
             <FlowbiteBreadcrumbs currentPage={game.name} />
           </div>
 
-          <div>
-            <div>
+          <div className="block w-fit">
+            <div className="block md:mx-auto ">
               <FlowbiteCarousel images={images} onClick={openLightbox} />
             </div>
-            <div className=" mt-3 mb-4 max-w-[650px]">
+            <div className="w-[657px] md:w-[460px] lg:w-[650px] mt-3 mb-4">
               <ImagesSlider data={images} />
             </div>
-
-            <div className="flex gap-3 items-center">
-              <div>
-                <ReactSVG src={EveryonePlus} alt="" />
-              </div>
-              <div className="font-light text-xs min-w-[120px] max-w-[352px]">
-                <div className="pb-1 border-b border-solid border-nin_lightgray">
-                  <p>
-                    Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated
-                    Gambling, Mild Language, Mild Blood
-                  </p>
-                </div>
-                <div className="pt-2">Users Interact</div>
-              </div>
+            <div className="hidden md:block">
+              <Rating />
             </div>
             <span className="block w-6 h-6"></span>
           </div>
-          <div className="grid  auto-rows-min ">
+          <div className="grid auto-rows-min md:p-0 w-full">
             <div className="flex items-start font-light	text-sm	items-center">
               <div className="h-4	mr-1.5 block w-0.5 bg-nin_red"></div>
               <p className="text-sm font-light">Nintendo Switch</p>
@@ -52,7 +39,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
             <div className="flex flex-row	justify-between">
               <p className="font-bold text-[1.75rem]">${game.price}</p>
               <div>
-                <Favorite className="-ml-3" />
+                <Favorite className="-m-3" />
               </div>
             </div>
             <span className="w-6 h-6"></span>
@@ -71,7 +58,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
             <span className="w-6 h-6"></span>
             <Button
               label="Direct download"
-              className="text-xl w-[440px] h-[64px]"
+              className="text-xl w-full h-[64px]"
               icon={DownloadIcon}
               iconClass="mr-4"
             />
@@ -84,7 +71,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

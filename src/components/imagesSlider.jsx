@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
         position: "absolute",
         top: "0px",
         margin: "0px",
-        height: "100%",
+        height: "90%",
         transition: "all 200ms ease-in-out 25ms",
         color: "{rgb(218, 218, 218)}",
         border: "none",
@@ -52,7 +52,7 @@ function SamplePrevArrow(props) {
         position: "absolute",
         top: "0px",
         margin: "0px",
-        height: "100%",
+        height: "90%",
         transition: "all 200ms ease-in-out 25ms",
         color: "{rgb(218, 218, 218)}",
         border: "none",
@@ -89,14 +89,14 @@ const settings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 2,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 6,
         slidesToScroll: 2,
       },
     },
@@ -113,7 +113,7 @@ const ImagesSlider = ({ data }) => {
             alt=""
             width={90}
             height={50}
-            className="m-2 rounded-2xl"
+            className="m-2 rounded-xl"
           />
         </div>
       ))}

@@ -174,6 +174,7 @@ module.exports = {
       nin_slider: "#0000004d",
       nin_sliderhover: "#00000099",
       nin_lightblue: "#d6f0fa",
+      nin_cardbg: "#f8f8f8",
     }),
     columns: {
       auto: "auto",

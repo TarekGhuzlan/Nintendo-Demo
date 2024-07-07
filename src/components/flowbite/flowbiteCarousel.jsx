@@ -13,7 +13,7 @@ const customTheme = {
 
 export function FlowbiteCarousel({ images, onClick }) {
   return (
-    <div className="h-[370px] w-[658px] group">
+    <div className=" h-[370px] ms:h-[330px] md:h-[260px] md:w-[460px] lg:h-[370px] lg:w-[650px] group">
       <Flowbite theme={{ theme: customTheme }}>
         <Carousel slide={false} indicators={false}>
           {images.map((image, index) => (
@@ -22,7 +22,7 @@ export function FlowbiteCarousel({ images, onClick }) {
               src={image.big_image}
               alt="..."
               onClick={() => onClick(index++)}
-              className="rounded-2xl"
+              className="rounded-2xl object-contain h-auto  w-auto"
             />
           ))}
         </Carousel>
