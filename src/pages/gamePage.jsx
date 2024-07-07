@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import MainBanner from "../components/mainBanner";
 import Highlight from "./../components/highlight";
+import Details from "../components/details";
 import Games from "../components/games";
 import Lightbox from "./../components/lightbox";
 import { getImages } from "./../data/images";
@@ -40,7 +41,6 @@ const GamePage = () => {
       <Lightbox
         images={orderedImages}
         open={open}
-        className="overflow"
         closeLightbox={() => handleOpenLightbox(-1)}
       />
 
@@ -50,6 +50,7 @@ const GamePage = () => {
         openLightbox={handleOpenLightbox}
       />
       <Highlight game={game} />
+      <Details />
       <Games games={filteredGames} />
     </>
   );
