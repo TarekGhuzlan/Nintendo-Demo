@@ -11,7 +11,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
   return (
     <>
       <section className="block  bg-nin_lightblue relative w-full max-xl:pb-16 xl:py-8">
-        <div className="container w-auto max-w-screen-xl mx-auto bg-white grid  md:auto-cols-auto md:gap-x-8 gap-y-4  shadow-lg xl:rounded-2xl pt-4 max-md:pb-12 md:py-8 md:px-12 -mb-16 ">
+        <div className="container w-auto max-w-[1240px] mx-auto bg-white grid  md:auto-cols-auto md:gap-x-8 gap-y-4  shadow-lg xl:rounded-2xl pt-4 max-md:pb-12 md:py-8 md:px-12 -mb-16 ">
           <div className="md:col-span-2">
             <FlowbiteBreadcrumbs currentPage={game.name} />
           </div>
