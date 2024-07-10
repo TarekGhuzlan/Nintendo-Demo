@@ -8,14 +8,14 @@ const Highlight = ({ game }) => {
       <div className="container mx-4 md:mx-auto w-[96%] max-w-[71.5rem]">
         <div className="grid md:grid-cols-2 gap-7 items-start">
           <div className="block">
-            <h2 className="font-bold text-[1.3125rem]">
+            <h2 className="font-bold max-sm:text-[1.125rem] text-[1.3125rem]">
               You're moving to the valley...
             </h2>
             <div className="flex flex-col items-start mb-4">
               <div></div>
               <ReadMore
                 text={[
-                  <p className="font-light text-base leading-[1.4rem] mt-4 mb-2 ">
+                  <p className="font-light max-sm:text-[0.875rem] text-base leading-[1.4rem] mt-4 mb-2 ">
                     You’ve inherited your grandfather’s old farm plot in Stardew
                     Valley. Armed with hand-me-down tools and a few coins, you
                     set out to begin your new life. Can you learn to live off
@@ -38,13 +38,13 @@ const Highlight = ({ game }) => {
                 ]}
                 className="line-clamp-[10]"
               />
-              <p className="font-light text-xs">
+              <p className="font-light max-sm:text-[0.625rem] text-xs">
                 Software description provided by the publisher.
               </p>
             </div>
             <div>
               <Button
-                className="px-6 h-12 text-lg"
+                className="max-sm:w-full px-6 h-12 max-sm:text-base text-lg"
                 label="Explore this game's official website"
               />
             </div>

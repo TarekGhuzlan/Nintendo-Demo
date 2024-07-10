@@ -18,7 +18,7 @@ const Details = () => {
   const modesIcons = [
     { icon: TVIcon, label: "TV" },
     { icon: TabletopIcon, label: "Tabletop" },
-    { icon: HandheldIcon, label: "HandheldIcon" },
+    { icon: HandheldIcon, label: "Handheld" },
   ];
 
   const detailsInfo = [

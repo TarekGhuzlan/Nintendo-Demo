@@ -31,13 +31,19 @@ const MainBanner = ({ game, images, openLightbox }) => {
           <div className="grid auto-rows-min md:p-0 w-full">
             <div className="flex items-start font-light	text-sm	items-center">
               <div className="h-4	mr-1.5 block w-0.5 bg-nin_red"></div>
-              <p className="text-sm font-light">Nintendo Switch</p>
+              <p className="max-sm:text-[0.625rem] text-sm font-light">
+                Nintendo Switch
+              </p>
             </div>
             <span className="w-6 h-6"></span>
-            <h1 className="font-bold text-[1.75rem]">{game.name}</h1>
+            <h1 className="font-bold max-sm:text-[1.3125rem] text-[1.75rem]">
+              {game.name}
+            </h1>
             <span className="w-6 h-6"></span>
             <div className="flex flex-row	justify-between">
-              <p className="font-bold text-[1.75rem]">${game.price}</p>
+              <p className="font-bold max-sm:text-[1.3125rem] text-[1.75rem]">
+                ${game.price}
+              </p>
               <div>
                 <Favorite className="-m-3" />
               </div>
@@ -50,7 +56,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
                 width="24"
                 height="24"
               />
-              <div className="font-light text-xs">
+              <div className="font-light max-sm:text-[0.625rem] text-xs">
                 Eligible for up to <span className="font-bold	">75</span> Gold
                 Points
               </div>
@@ -63,7 +69,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
               iconClass="mr-4"
             />
             <span className="w-5 h-5"></span>
-            <div className="font-light text-xs">
+            <div className="font-light max-sm:text-[0.625rem] text-xs">
               <p>
                 This item will be sent to your system automatically after
                 purchase.

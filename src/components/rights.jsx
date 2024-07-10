@@ -12,15 +12,15 @@ const Rights = () => {
           software.
         </p>
         <div>
-          <p className="text-base md:text-xs font-light"></p>
-          <p className="text-base md:text-xs font-light my-3">
+          <p className="text-base text-xs font-light"></p>
+          <p className="text-base text-xs font-light my-3">
             Nintendo Switch Online membership (sold separately) and Nintendo
             Account required for online play. Not available in all countries.
             Internet access required for online features. Terms apply.
             <a href="#">nintendo.com/switch-online</a>
           </p>
-          <p className="text-base md:text-xs font-light"></p>
-          <p className="text-base md:text-xs font-light">
+          <p className="text-base   text-xs font-light"></p>
+          <p className="text-base text-xs font-light">
             Stardew Valley © ConcernedApe LLC 2016-2020. All rights reserved.
           </p>
         </div>
