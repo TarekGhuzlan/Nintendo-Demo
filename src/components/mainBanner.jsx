@@ -20,7 +20,7 @@ const MainBanner = ({ game, images, openLightbox }) => {
             <div className="block md:mx-auto ">
               <FlowbiteCarousel images={images} onClick={openLightbox} />
             </div>
-            <div className="w-[700px] md:w-[440px] lg:w-[700px] mt-3 md:mb-4">
+            <div className="w-[700px] max-sm:w-[368px] md:w-[440px] lg:w-[700px] mt-3 md:mb-4">
               <ImagesSlider data={images} />
             </div>
             <div className="hidden md:block">
