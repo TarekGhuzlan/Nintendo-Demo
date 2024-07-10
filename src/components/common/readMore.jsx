@@ -21,7 +21,7 @@ const ReadMore = ({ text, className }) => {
           >
             <span className="font-bold inline-flex items-center text-nin_red hover:text-nin_hoverred">
               <ReactSVG src={MinusIcon} className="pr-2 w-4.5" />
-              <p>Read less</p>
+              <p className="pt-0.5">Read less</p>
             </span>
           </button>
         </>
@@ -36,7 +36,7 @@ const ReadMore = ({ text, className }) => {
         >
           <span className="font-bold inline-flex items-center text-nin_red hover:text-nin_hoverred">
             <ReactSVG src={PlusIcon} className="pr-2 w-4.5" />
-            <p>Read more</p>
+            <p className="pt-0.5">Read more</p>
           </span>
         </button>
       </>
