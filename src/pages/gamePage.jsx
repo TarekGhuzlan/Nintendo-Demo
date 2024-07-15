@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Header from "../components/header";
 import MainBanner from "../components/mainBanner";
 import Highlight from "./../components/highlight";
 import Details from "../components/details";
@@ -40,6 +41,7 @@ const GamePage = () => {
 
   return (
     <>
+      <Header />
       <Lightbox
         images={orderedImages}
         open={open}
