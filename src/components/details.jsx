@@ -32,7 +32,7 @@ const Details = () => {
       icon: GroupIcon,
       title: "No. of players",
       text: ["Single System (1)", "Local wireless (1)", "Online (1-4)"],
-      isLink: false,
+      isLink: true,
     },
     {
       icon: DPadIcon,
