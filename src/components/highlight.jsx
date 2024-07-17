@@ -44,7 +44,7 @@ const Highlight = ({ game }) => {
             </div>
             <div>
               <Button
-                className="max-sm:w-full px-6 h-12 max-sm:text-base text-lg"
+                className="max-sm:w-full px-6 h-12 max-sm:text-base text-lg rounded-xl"
                 label="Explore this game's official website"
               />
             </div>

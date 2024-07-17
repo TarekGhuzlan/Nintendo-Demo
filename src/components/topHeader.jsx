@@ -29,7 +29,7 @@ const TopHeader = () => {
       <div className="flex basis-0 grow shrink items-center gap-4 ">
         <a href="#" className="inline-flex items-center ">
           <div className="w-[105px] h-[52px] bg-nin_red flex justify-center items-center text-white">
-            <ReactSVG src={NintendoIcon} />
+            <ReactSVG src={NintendoIcon} className="w-[69px]" />
           </div>
         </a>
         <div className="lg:basis-[28.125rem]">

@@ -64,9 +64,9 @@ const MainBanner = ({ game, images, openLightbox }) => {
             <span className="w-6 h-6"></span>
             <Button
               label="Direct download"
-              className="text-xl w-full h-[64px]"
+              className="text-xl w-full h-[64px] rounded-xl"
               icon={DownloadIcon}
-              iconClass="mr-4"
+              iconClass="mr-4 w-6"
             />
             <span className="w-5 h-5"></span>
             <div className="font-light max-sm:text-[0.625rem] text-xs">
