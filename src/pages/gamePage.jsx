@@ -29,7 +29,6 @@ const GamePage = () => {
   const filteredGames = filterArray(game, games);
 
   const handleOpenLightbox = (index) => {
-    console.log(index);
     if (index >= 0) {
       setOrderedImages(rearrangeArray(index, images));
       setOpen(true);
@@ -41,13 +40,12 @@ const GamePage = () => {
 
   return (
     <>
-      <Header />
       <Lightbox
         images={orderedImages}
         open={open}
         closeLightbox={() => handleOpenLightbox(-1)}
       />
-
+      <Header />
       <MainBanner
         game={game}
         images={images}

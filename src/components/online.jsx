@@ -16,10 +16,16 @@ const Online = () => {
             </p>
             <p className="font-bold text-base">
               This game supports:
-              <a className="font-bold text-base mx-2 underline text-nin_red hover:text-nin_hoverred">
+              <a
+                href="#"
+                className="font-bold text-base mx-2 underline text-nin_red hover:text-nin_hoverred"
+              >
                 Online Play
               </a>
-              <a className="font-bold text-base mx-2 underline text-nin_red hover:text-nin_hoverred">
+              <a
+                href="#"
+                className="font-bold text-base mx-2 underline text-nin_red hover:text-nin_hoverred"
+              >
                 Save Data Cloud
               </a>
             </p>

@@ -53,7 +53,12 @@ const TopHeader = () => {
         </div>
       </div>
       <div className="flex shrink-0 items-center gap-7 px-5">
-        <TopIconText elements={topIcons} />
+        {topIcons.map((element) => (
+          <span className="py-3.5">
+            <TopIconText icon={element.icon} text={element.text} />
+          </span>
+        ))}
+
         <a className="py-3.5 inline-flex items-center content-center">
           <span className="border-r-4 border-white overflow-hidden">
             <img
