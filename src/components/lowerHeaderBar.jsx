@@ -5,7 +5,7 @@ import { ReactSVG } from "react-svg";
 
 const LowerHeaderBar = () => {
   return (
-    <div className="flex items-center justify-center min-h-12 bg-nin_cardbg p-3 ">
+    <div className="flex items-center justify-center min-h-12 bg-nin_cardbg p-3 z-10">
       <div className="flex text-center justify-center md:w-[96%] mx-4 md:mx-auto max-w-[90rem]">
         <div className="flex items mx-0 md:px-4 lg:border-r-[1px] lg:border-[#969696] lg:border-solid">
           <ReactSVG src={ShippingTruckIcon} className="mr-3 text-nin_red" />

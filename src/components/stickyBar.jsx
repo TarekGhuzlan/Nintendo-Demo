@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "./common/button";
 import DownloadIcon from "../assets/icons/DownloadIcon.svg";
 
-const StickyHeader = () => {
+const StickyBar = () => {
   const [sticky, setSticky] = useState(false);
 
   const scroll = () => {
@@ -22,11 +22,13 @@ const StickyHeader = () => {
   return (
     <div
       className={
-        sticky ? " fixed top-0 w-full z-20 bg-[#EFEFEF] shadow-lg" : "hidden"
+        sticky
+          ? " block fixed max-lg:bottom-12 lg:top-0 w-[440px] lg:w-full z-20 bg-[#EFEFEF] shadow-md max-lg:rounded-t-2xl left-1/2 -translate-x-[50%] "
+          : "hidden"
       }
     >
       <div className="flex justify-center items-center w-full ">
-        <div className="flex justify-center items-center w-full lg:w-[96%] lg:max-w-[71.5rem] h-[64px]    ">
+        <div className="flex justify-center items-center w-full lg:w-[96%] lg:max-w-[71.5rem] h-[110px] lg:h-[64px]    ">
           <div className="flex justify-center items-center w-full ">
             <div className="flex w-full items-start lg:items-center h-[110px] lg:h-16 pt-4 lg:pt-0 justify-between ">
               <p className="hidden lg:block w-full text-lg font-bold">
@@ -56,4 +58,4 @@ const StickyHeader = () => {
   );
 };
 
-export default StickyHeader;
+export default StickyBar;

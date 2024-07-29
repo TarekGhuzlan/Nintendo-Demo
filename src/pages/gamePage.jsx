@@ -8,19 +8,23 @@ import Online from "../components/online";
 import Games from "../components/games";
 import Rights from "../components/rights";
 import Lightbox from "./../components/lightbox";
+import Footer from "../components/footer";
 import { getImages } from "./../data/images";
 import { getGames, getGame } from "../data/games";
+import { getProducts } from "../data/products";
 import { rearrangeArray } from "../helpers/helpers-functions";
 import { filterArray } from "../helpers/helpers-functions";
 
 const GamePage = () => {
   const [games, setGames] = useState([]);
+  const [products, setProducts] = useState([]);
   const [orderedImages, setOrderedImages] = useState([]);
   const [open, setOpen] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
     setGames(getGames());
+    setProducts(getProducts());
   }, []);
 
   const gameId = id;
@@ -45,17 +49,20 @@ const GamePage = () => {
         open={open}
         closeLightbox={() => handleOpenLightbox(-1)}
       />
-      <Header />
-      <MainBanner
-        game={game}
-        images={images}
-        openLightbox={handleOpenLightbox}
-      />
-      <Highlight game={game} />
-      <Details />
-      <Online />
-      <Games games={filteredGames} />
-      <Rights />
+      <Header products={products} />
+      <main className="mb-12 lg:mb-16">
+        <MainBanner
+          game={game}
+          images={images}
+          openLightbox={handleOpenLightbox}
+        />
+        <Highlight game={game} />
+        <Details />
+        <Online />
+        <Games games={filteredGames} />
+        <Rights />
+      </main>
+      <Footer />
     </>
   );
 };

@@ -5,7 +5,7 @@ import { ReactSVG } from "react-svg";
 
 const SmallScreenHeader = () => {
   return (
-    <div className="flex items-center justify-between w-full px-4 h-[46px] bg-nin_red text-white">
+    <div className="flex items-center justify-between w-full px-4 h-[46px] bg-nin_red text-white z-10">
       <a href="#" className="inline-flex items-center ">
         <ReactSVG src={NintendoIcon} className="w-[89px]" />
       </a>
